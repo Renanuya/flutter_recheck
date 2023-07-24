@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-class RecheckTextWidgetPage extends StatelessWidget {
+import 'container_sizedbox_widget_recheck.dart';
+
+class RecheckTextWidgetPage extends StatefulWidget {
   const RecheckTextWidgetPage({super.key});
 
+  @override
+  State<RecheckTextWidgetPage> createState() => _RecheckTextWidgetPageState();
+}
+
+class _RecheckTextWidgetPageState extends State<RecheckTextWidgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +25,19 @@ class RecheckTextWidgetPage extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     color: const Color(0xffCC5A71),
                   ),
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const RecheckContainerSizedboxWidgetPages()));
+              },
+              child: const Text('Go to Container & SizedBox Widget Page'),
             ),
           ],
         ),
