@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/scaffold_recheck.dart';
 
 class RecheckContainerSizedboxWidgetPages extends StatelessWidget {
   const RecheckContainerSizedboxWidgetPages({super.key});
@@ -26,8 +27,7 @@ class RecheckContainerSizedboxWidgetPages extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) =>
-                            const RecheckContainerSizedboxWidgetPages()));
+                        builder: (context) => const RecheckScaffoldPage()));
               },
               child: const Text('Go to Container & SizedBox Widget Page'),
             ),
