@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'button_widget_recheck.dart';
+
 class RecheckScaffoldPage extends StatelessWidget {
   const RecheckScaffoldPage({super.key});
 
@@ -7,7 +9,25 @@ class RecheckScaffoldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const Text('Hello World.'),
+      body: Center(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text('Hello World.'),
+          const SizedBox(
+            height: 50,
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const RecheckButtonWidgetPage()));
+            },
+            child: const Text('Go to Container & SizedBox Widget Page'),
+          ),
+        ],
+      )),
       backgroundColor: Colors.white70,
       //We have use "extendBody: true" to extend the body of the scaffold to the bottom of the screen.
       extendBody: true,
