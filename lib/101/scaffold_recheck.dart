@@ -8,27 +8,30 @@ class RecheckScaffoldPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('Flutter Recheck'),
+      ),
       body: Center(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Text('Hello World.'),
-          const SizedBox(
-            height: 50,
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const RecheckButtonWidgetPage()));
-            },
-            child: const Text('Go to Container & SizedBox Widget Page'),
-          ),
-        ],
-      )),
-      backgroundColor: Colors.white70,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text('Hello World.'),
+            const SizedBox(
+              height: 50,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const RecheckButtonWidgetPage()));
+              },
+              child: const Text('Go to Button Widget Page'),
+            ),
+          ],
+        ),
+      ),
+
       //We have use "extendBody: true" to extend the body of the scaffold to the bottom of the screen.
       extendBody: true,
       floatingActionButton: FloatingActionButton(

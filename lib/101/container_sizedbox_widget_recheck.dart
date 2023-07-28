@@ -7,6 +7,9 @@ class RecheckContainerSizedboxWidgetPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Flutter Recheck'),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -29,7 +32,7 @@ class RecheckContainerSizedboxWidgetPages extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => const RecheckScaffoldPage()));
               },
-              child: const Text('Go to Container & SizedBox Widget Page'),
+              child: const Text('Go to Scaffold Page'),
             ),
           ],
         ),

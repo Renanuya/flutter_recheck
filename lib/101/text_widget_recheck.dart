@@ -13,6 +13,9 @@ class _RecheckTextWidgetPageState extends State<RecheckTextWidgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Flutter Recheck'),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
