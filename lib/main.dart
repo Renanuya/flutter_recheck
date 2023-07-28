@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '101/text_widget_recheck.dart';
 
@@ -11,9 +12,22 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      //We have used "appBarTheme" to modify the appbar.
+      //We have used "backgroundColor" to change the background color of the appbar.
+      //We have used "elevation" to remove the shadow of the appbar.
+      //We have used "centerTitle" to center the title of the appbar.
+      //We have used "systemOverlayStyle" to change the status bar color.
+      theme: ThemeData.dark().copyWith(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          centerTitle: true,
+          systemOverlayStyle: SystemUiOverlayStyle.light,
+        ),
+      ),
       debugShowCheckedModeBanner: false,
-      home: RecheckTextWidgetPage(),
+      home: const RecheckTextWidgetPage(),
     );
   }
 }
