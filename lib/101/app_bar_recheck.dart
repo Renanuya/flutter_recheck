@@ -32,7 +32,10 @@ class RecheckAppBarPage extends StatelessWidget {
                     MaterialPageRoute(
                         builder: (context) => const RecheckIconsPage()));
               },
-              child: const Text('Go to Icons Page'),
+              child: const Text(
+                'Go to Icons Page',
+                style: TextStyle(),
+              ),
             ),
           ],
         ),
