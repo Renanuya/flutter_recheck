@@ -12,6 +12,7 @@ class ReCheckStatelessWidgetPage extends StatelessWidget {
         children: [
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
+            // We have used "Extract Widget" to create a custom widget called "MyCustomContainerWidget
             children: [
               MyCustomContainerWidget(
                   containerColor: Colors.red, containerNumber: '2'),
@@ -40,14 +41,17 @@ class ReCheckStatelessWidgetPage extends StatelessWidget {
 }
 
 class MyCustomContainerWidget extends StatelessWidget {
+//We have used "required" to make sure that the user passes the value of "containerColor" and "containerNumber
+//We have used "this." to make sure that the value of "containerColor" and "containerNumber" is assigned to the variable "containerColor" and "containerNumber"
   const MyCustomContainerWidget({
     super.key,
     required this.containerColor,
     required this.containerNumber,
   });
-
+//We have used "final" to make sure that the value of "containerColor" and "containerNumber" cannot be changed once it is assigned
+//We have used "?" to make sure that the value of "containerColor" and "containerNumber" can be null
   final Color? containerColor;
-  final String containerNumber;
+  final String? containerNumber;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -61,7 +65,8 @@ class MyCustomContainerWidget extends StatelessWidget {
         width: 50,
         child: Center(
           child: Text(
-            containerNumber,
+            //We have used "!" to make sure that the value of "containerNumber" is not null
+            containerNumber!,
             style: const TextStyle(
               fontSize: 30,
             ),
