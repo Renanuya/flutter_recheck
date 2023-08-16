@@ -45,7 +45,7 @@ class MyCustomContainerWidget extends StatelessWidget {
 //We have used "this." to make sure that the value of "containerColor" and "containerNumber" is assigned to the variable "containerColor" and "containerNumber"
   const MyCustomContainerWidget({
     super.key,
-    required this.containerColor,
+    this.containerColor,
     required this.containerNumber,
   });
 //We have used "final" to make sure that the value of "containerColor" and "containerNumber" cannot be changed once it is assigned
