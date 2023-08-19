@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_check/101/example_page_recheck.dart';
+import 'package:flutter_check/101/demo%20pages/example_page_recheck.dart';
 
 class ReCheckImagePage extends StatelessWidget {
   const ReCheckImagePage({super.key});
