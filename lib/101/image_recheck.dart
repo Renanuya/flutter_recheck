@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/example_page_recheck.dart';
 
 class ReCheckImagePage extends StatelessWidget {
   const ReCheckImagePage({super.key});
@@ -23,6 +24,17 @@ class ReCheckImagePage extends StatelessWidget {
             ),
             const SizedBox(
               height: 50,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const ReCheckExamplePage(),
+                  ),
+                );
+              },
+              child: const Text('Go to Example Page'),
             ),
           ],
         ),
