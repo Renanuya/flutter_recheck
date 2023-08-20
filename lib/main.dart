@@ -19,6 +19,8 @@ class MainApp extends StatelessWidget {
       //We have used "centerTitle" to center the title of the appbar.
       //We have used "systemOverlayStyle" to change the status bar color.
       theme: ThemeData.dark().copyWith(
+        progressIndicatorTheme:
+            const ProgressIndicatorThemeData(color: Colors.white),
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
