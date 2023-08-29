@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'container_sizedbox_widget_recheck.dart';
+import '2_container_sizedbox_widget_recheck.dart';
 
 class RecheckTextWidgetPage extends StatefulWidget {
   const RecheckTextWidgetPage({super.key});

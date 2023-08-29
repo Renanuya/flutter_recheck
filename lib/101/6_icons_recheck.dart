@@ -1,24 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_check/101/app_bar_recheck.dart';
+import 'package:flutter_check/101/7_stateless_widget_recheck.dart';
 
-class RecheckButtonWidgetPage extends StatelessWidget {
-  const RecheckButtonWidgetPage({super.key});
+class RecheckIconsPage extends StatelessWidget {
+  const RecheckIconsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Flutter Recheck'),
-      ),
+      //Honestly, I know everything, but I still share to maintain order.
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            //We have used "InkWell" to make a button.
-            InkWell(
-              onTap: () {},
-              child: const Text('This is a InkWell.'),
-            ),
+            // ignore: prefer_const_constructors
+            Icon(Icons.people_alt_outlined),
             const SizedBox(
               height: 50,
             ),
@@ -27,9 +22,10 @@ class RecheckButtonWidgetPage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const RecheckAppBarPage()));
+                        builder: (context) =>
+                            const ReCheckStatelessWidgetPage()));
               },
-              child: const Text('Go to AppBar Page'),
+              child: const Text('Go to Stateless Widget Page'),
             ),
           ],
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_check/101/scaffold_recheck.dart';
+import 'package:flutter_check/101/3_scaffold_recheck.dart';
 
 class RecheckContainerSizedboxWidgetPages extends StatelessWidget {
   const RecheckContainerSizedboxWidgetPages({super.key});

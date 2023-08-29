@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_check/101/stateless_widget_recheck.dart';
+import 'package:flutter_check/101/7_stateless_widget_recheck.dart';
 
 class RecheckIconsPage extends StatelessWidget {
   const RecheckIconsPage({super.key});
