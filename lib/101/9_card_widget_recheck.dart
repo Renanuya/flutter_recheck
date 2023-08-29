@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'image_recheck.dart';
+import '10_image_recheck.dart';
 
 class ReCheckCardWidgetPage extends StatelessWidget {
   const ReCheckCardWidgetPage({super.key});
