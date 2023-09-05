@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '8_padding_widget_recheck.dart';
 
-class ReCheckStatelessWidgetPage extends StatelessWidget {
-  const ReCheckStatelessWidgetPage({super.key});
+class ReCheckStatelessPage extends StatelessWidget {
+  const ReCheckStatelessPage({super.key});
 
   @override
   Widget build(BuildContext context) {

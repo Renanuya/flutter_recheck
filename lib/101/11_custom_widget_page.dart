@@ -56,7 +56,7 @@ class ReCheckCustomWidgetPage extends StatelessWidget {
 // -------- Custom Elavated Button Widget -------- //
 //This is Custom Elevated Button's Widget
 class _CustomElevatedButtonWidget extends StatelessWidget {
-  _CustomElevatedButtonWidget({
+  const _CustomElevatedButtonWidget({
     super.key,
     required this.customTextContext,
     required this.buttonHeightValue,
@@ -92,7 +92,6 @@ class _CustomElevatedButtonWidget extends StatelessWidget {
 // This is Custom Text's Widget
 class _CustomWidgetTextWidget extends StatelessWidget {
   const _CustomWidgetTextWidget({
-    super.key,
     required this.customText,
   });
   final String? customText;

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/product/components/navigation_button.dart';
 
 import '13_list_tile_widget_recheck.dart';
 
@@ -21,16 +22,11 @@ class ReCheckIndicatorWidgetPage extends StatelessWidget {
             const SizedBox(
               height: 250,
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const ReCheckListTileWidgetPage(),
-                  ),
-                );
-              },
-              child: const Text('Go to list Tile Page'),
+            NavigationButton(
+              buttonText: 'Go to ListTile Widget Page',
+              route: MaterialPageRoute(builder: (context) {
+                return const ReCheckListTileWidgetPage();
+              }),
             ),
           ],
         ),
