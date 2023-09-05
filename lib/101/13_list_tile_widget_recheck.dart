@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/14_stack_widget_recheck.dart';
+import 'package:flutter_check/101/product/components/navigation_button.dart';
 import 'package:kartal/kartal.dart';
 
 class ReCheckListTileWidgetPage extends StatelessWidget {
@@ -24,6 +26,13 @@ class ReCheckListTileWidgetPage extends StatelessWidget {
                   imageUrl: imageUrl,
                   tileTrailingText: tileTrailingText),
             ),
+            context.sized.emptySizedHeightBoxHigh,
+            NavigationButton(
+              buttonText: 'Go to Stack Widget Page',
+              route: MaterialPageRoute(builder: (context) {
+                return const ReCheckStackWidgetPage();
+              }),
+            )
           ],
         ),
       ),

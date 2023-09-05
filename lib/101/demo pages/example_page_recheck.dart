@@ -44,7 +44,6 @@ class ReCheckExamplePage extends StatelessWidget {
 //This is Page Empty Space's Widget
 class _PageEmptySpaceWidget extends StatelessWidget {
   const _PageEmptySpaceWidget({
-    super.key,
     required this.pageHeight,
   });
   final double? pageHeight;
@@ -73,7 +72,6 @@ class _PageHeightValues {
 //This is Page Paragraph Text's Widget
 class _ParagraphTextWidget extends StatelessWidget {
   const _ParagraphTextWidget({
-    super.key,
     required this.paragraphText,
   });
 
@@ -91,7 +89,6 @@ class _ParagraphTextWidget extends StatelessWidget {
 //This is Page Title Text's Widget
 class _TitleTextWidget extends StatelessWidget {
   const _TitleTextWidget({
-    super.key,
     required this.titleText,
   });
 
@@ -111,7 +108,6 @@ class _TitleTextWidget extends StatelessWidget {
 //This is Button Text's Widget
 class _ButtonTextWidget extends StatelessWidget {
   const _ButtonTextWidget({
-    super.key,
     required this.buttonText,
   });
 
@@ -128,7 +124,6 @@ class _ButtonTextWidget extends StatelessWidget {
 
 class _PageImageWidget extends StatelessWidget {
   const _PageImageWidget({
-    super.key,
     required this.imageUrl,
   });
 
@@ -151,10 +146,8 @@ class _PagePaddingValues {
 }
 
 // --------- Elevated Button Widget --------- //
-// This is Page Elevated Button's Widget
 class _PageElevatedButtonWidget extends StatelessWidget {
   _PageElevatedButtonWidget({
-    super.key,
     required this.buttonText,
   });
 
