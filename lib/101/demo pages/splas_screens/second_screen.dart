@@ -36,7 +36,9 @@ class ReCheckDemoSecondScreen extends StatelessWidget {
             NavigationButton(
               buttonText: 'Go to Stateful Life Cycle Page',
               route: MaterialPageRoute(
-                  builder: (context) => const ReCheckStatefulLifeCyclePage()),
+                  builder: (context) => const ReCheckStatefulLifeCyclePage(
+                        message: 'Renan',
+                      )),
             )
           ],
         ),

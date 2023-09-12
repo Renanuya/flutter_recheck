@@ -27,7 +27,6 @@ class MainApp extends StatelessWidget {
         progressIndicatorTheme:
             const ProgressIndicatorThemeData(color: Colors.white),
         appBarTheme: const AppBarTheme(
-        
           backgroundColor: Colors.transparent,
           elevation: 0,
           centerTitle: true,
