@@ -32,7 +32,7 @@ class ReCheckListTileWidgetPage extends StatelessWidget {
               route: MaterialPageRoute(builder: (context) {
                 return const ReCheckStackWidgetPage();
               }),
-            )
+            ),
           ],
         ),
       ),
