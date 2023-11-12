@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/12_indicator_widget_recheck.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 class ReCheckCustomWidgetPage extends StatelessWidget {
   const ReCheckCustomWidgetPage({super.key});
@@ -9,6 +10,7 @@ class ReCheckCustomWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(),
       body: Center(
         child: Column(

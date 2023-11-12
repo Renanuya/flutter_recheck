@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 import '8_padding_widget_recheck.dart';
 
@@ -8,6 +9,7 @@ class ReCheckStatelessPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/17_text_field_recheck.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 import 'package:flutter_check/101/product/components/navigation_button.dart';
 
 class ReCheckStatefulLifeCyclePage extends StatefulWidget {
@@ -32,6 +33,7 @@ class _ReCheckStatefulLifeCyclePageState
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(
         title: Text(_message),
       ),

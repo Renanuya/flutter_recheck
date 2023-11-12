@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/demo%20pages/example_page_recheck.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 class ReCheckImagePage extends StatelessWidget {
   const ReCheckImagePage({super.key});
@@ -7,6 +8,7 @@ class ReCheckImagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

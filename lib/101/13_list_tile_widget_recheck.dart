@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/14_stack_widget_recheck.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 import 'package:flutter_check/101/product/components/navigation_button.dart';
 import 'package:kartal/kartal.dart';
 
@@ -14,6 +15,7 @@ class ReCheckListTileWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(),
       body: Padding(
         padding: context.padding.low,

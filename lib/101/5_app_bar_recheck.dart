@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 import '6_icons_recheck.dart';
 
@@ -8,6 +9,7 @@ class RecheckAppBarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       //We have used all AppBar properties in main.dart file.
       //We have used "actions" to add a button in the appbar.
       appBar: AppBar(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 import 'package:flutter_check/101/product/components/navigation_button.dart';
 
 import '13_list_tile_widget_recheck.dart';
@@ -9,6 +10,7 @@ class ReCheckIndicatorWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(),
       body: Scaffold(
           body: Center(

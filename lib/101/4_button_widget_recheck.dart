@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/5_app_bar_recheck.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 class RecheckButtonWidgetPage extends StatelessWidget {
   const RecheckButtonWidgetPage({super.key});
@@ -7,6 +8,7 @@ class RecheckButtonWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(
         title: const Text('Flutter Recheck'),
       ),

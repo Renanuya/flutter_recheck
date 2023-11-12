@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/15_stateful_recheck.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 import 'package:flutter_check/101/product/components/navigation_button.dart';
 
 class ReCheckStackWidgetPage extends StatelessWidget {
@@ -10,6 +11,7 @@ class ReCheckStackWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
