@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/3_scaffold_recheck.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 class RecheckContainerSizedboxWidgetPages extends StatelessWidget {
   const RecheckContainerSizedboxWidgetPages({super.key});
@@ -7,6 +8,7 @@ class RecheckContainerSizedboxWidgetPages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(
         title: const Text('Flutter Recheck'),
       ),

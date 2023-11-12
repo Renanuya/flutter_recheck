@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_check/101/demo%20pages/splas_screens/splash_screen_page.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 import 'package:flutter_check/101/product/components/navigation_button.dart';
 import 'package:flutter_check/101/product/components/visitor_button.dart';
 
@@ -14,6 +15,7 @@ class _ReCheckStatefulPageState extends State<ReCheckStatefulPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(),
       body: Center(
         child: Column(

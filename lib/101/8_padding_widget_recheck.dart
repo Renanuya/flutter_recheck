@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 import '9_card_widget_recheck.dart';
 
@@ -8,6 +9,7 @@ class ReCheckPaddingWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(),
       //We have used "Padding" widged to give padding from the sides
       body: Padding(

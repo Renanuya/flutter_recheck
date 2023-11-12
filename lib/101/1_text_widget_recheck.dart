@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_check/101/product/components/drawer.dart';
 
 import '2_container_sizedbox_widget_recheck.dart';
 
@@ -13,6 +14,7 @@ class _RecheckTextWidgetPageState extends State<RecheckTextWidgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: FixDrawer(),
       appBar: AppBar(
         title: const Text('Flutter Recheck'),
       ),
